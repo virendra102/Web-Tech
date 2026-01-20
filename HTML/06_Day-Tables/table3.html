@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>cellspacing and cellpadding attribute in Table</h1>
+    <table border="1" cellpadding="10px" cellspacing="5px">
+        <caption>Employee data </caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>name</th>
+                <th>Role</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Ravan</td>
+                <td>Frontend dev</td>
+                <td rowspan="2">50000</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Ram</td>
+                <td>Backend dev</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>lakshman</td>
+                <td>HR </td>
+                <td>50000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Employees:</td>
+                <td>3</td>
+                <td>1Lakh</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
