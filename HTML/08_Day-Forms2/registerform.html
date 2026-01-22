@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <fieldset>
+            <tr>
+            <td>firstName:</td>
+            <td><input type="text" name="firstName" id="firstName"></td>
+        </tr>
+        <tr>
+            <td>lastName:</td>
+            <td><input type="text" name="lastName" id="lastName"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+            <td><input type="number" name="contact" id="contact"></td>
+        </tr>
+        <tr>
+            <td>DOB:</td>
+            <td><input type="date" name="DOB" id="DOB"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><label for="Male"><input type="radio" name="male" value="Male">Male</label>
+                <label for="Female"><input type="radio" name="female" value="Female">Female</label>
+                <label for="Other"><input type="radio" name="other" value="Other">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Skills:</td>
+            <td><label for="HTML"><input type="checkbox" name="skill ">HTML</label>
+                <label for="CSS"><input type="checkbox" name="skill">CSS</label>
+                <label for="JS"><input type="checkbox" name="skill">JS</label></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><textarea name="address " id=""></textarea></td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td><input type="text" name="city " id="city"></td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td><select name="state" id="state">
+                <option value="" disabled selected>--Select your state--</option>
+                <option value="Gujrat">Gujrat</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Tamil">Tamil</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Pincode:</td>
+            <td><input type="number" name="pincode " id="pincode"></td>
+        </tr>
+        <tr>
+            <td>Position Applied For:</td>
+            <td><input type="text" name="role" id="" list="role">
+            <datalist id="role">
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Full-Stack Developer">Full-Stack Developer</option>
+                <option value="MERN STACK Developer">MERN STACK Developer</option>
+            </datalist>
+        </td>
+        </tr>
+        <tr>
+            <td>Upload Resume:</td>
+            <td><input type="file" name="Resume" id="resume" accept=".pdf" multiple></td>
+        </tr>
+        <tr>
+            <td>LinkedIn Profile:</td>
+            <td><input type="url" name="linkedinurl" id="linkedinurl"></td>
+        </tr>
+        <tr>
+            <td>Available Start Date:</td>
+            <td><input type="date" name="startdate" id="startdate"></td>
+        </tr>
+        <tr>
+            <td>Expected Salary:</td>
+            <td>Min 10000 <input type="range" name="Salary" id="salary" min="10000" max="50000" step="10000">Max 50000</td>
+        </tr>
+        <tr>
+            <td>Wiling to Relocate:</td>
+            <td><select name="relocate" id="relocate">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="Reset"></td>
+            <td><input type="submit" value="Submit Application"></td>
+        </tr>
+        </fieldset>
+    </table>
+</body>
+</html>
