@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Child Combinator */
+        div > h1 {
+            color: blue;
+        }
+        div > p {
+            color: green;
+        }
+        div > main > h1 {
+            color: purple;
+        }
+        div > main > p {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>2.2 Child Selectors </h1><br>
+    The child combinator (>) selects elements that are direct children of a specified element.<br><br>
+    1. It is represented by the greater-than sign (>).<br>
+    2. It selects only the immediate children of the specified parent element, not all descendants.<br>
+    3. It is useful for applying styles to elements that are directly nested within
+    <div>
+        <h1>Heading-1</h1>
+        <p>Sub-heading-1 </p>
+        <main>
+            <h1>heading-2 </h1>
+            <p>Sub-heading-2 </p>
+        </main>
+        <h1>Headin-3</h1>
+    </div>
+</body>
+</html>

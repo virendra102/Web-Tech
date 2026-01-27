@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Descendant Combinator */
+        div h1 {
+            color: blue;
+        }
+        div p {
+            color: green;
+        }
+        div main h1 {
+            color: purple;
+        }
+        div main p {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>2. Combinators Selectors</h1> <br>
+    Combination of two or more html elements to select a specific element is called combinators selectors. There are four types of combinators selectors in CSS. They are:<br>
+    1. Descendant Combinator(space)<br>
+    2. Child Combinator(>)<br>
+    3. Adjacent Sibling Combinator(+)<br>
+    4. General Sibling Combinator(~)<br><br>
+    5. Grouping Selector(,)<br><br>
+    <h2>2.1 Descendant Combinator(space)</h2>
+    <div>
+        <h1>Heading-1</h1>
+        <p>Para-1 </p>
+        <main>
+            <h1>heading-2 </h1>
+            <p>Para-2 </p>
+            <p>Para-3 </p>
+        </main>
+    </div>
+</body>
+</html>
