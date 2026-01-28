@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled {
+            border: 2px solid green;
+            background-color: lightyellow;
+        }
+        input:disabled {
+            border: 2px solid red;
+
+            cursor: not-allowed;
+        }
+        input:checked {
+            accent-color: green;
+        }
+        input[type="radio"] {
+            accent-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>UI element Pcs</h1>
+    <div><label for="">Username:</label><input type="text" placeholder="Enter username"></div>
+    <br>
+    <div><label for="">Admin: </label><input type="text" disabled placeholder="Not Alloed"></div>
+    <br>
+    <div><label><input type="checkbox" checked >I accept Terms and Conditions</label>
+    <br>
+    <label><input type="radio" >Subscribe to Newsletter</label>
+    </div>   
+</body>
+</html>
