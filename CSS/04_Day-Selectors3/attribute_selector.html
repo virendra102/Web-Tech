@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. Targeting by their attribute name */
+        input[type] {
+            border: 2px solid blue;
+        }
+        /* 2. by exact value */
+        img[type="password"] {
+            border: 5px solid red;
+        }
+        /* 3. Target the word present inside anywhere in attribute  value*/
+        p[href*="qspider"] {
+            text-decoration: none;
+        }
+        /* 4. The exact word is present inside the entire attribute value*/
+        button[class~="btn"] {
+            background-color: green;
+            padding: 8px 15px;
+            font-size: 20px;
+        }
+        .primary {
+            border: 2px solid palevioletred;
+        }
+        p[class^="first"] {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        p[class$="para"] {
+            background-color: lightgrey;
+        }
+
+        /* 5. Ending with value */   
+        img[src$=".png"] {
+            border: 4px solid orange;
+        }
+        img[src$=".jpg"] {
+            border: 4px solid purple;
+        }
+        /* 6. Starting with value */
+        p[class^="first"] {
+            background-color: skyblue;
+        }
+        p[class^="second"] {
+            background-color: lightgreen;
+        }
+        /* 7. Hyphen value */
+        p[class|="en"] {
+            border: 2px solid brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Attribute Selectors</h1>
+    <h2>Input attribute</h2>
+    <input type="text"><input type="email"><input type="password">
+    <br><br>
+    <!-- links -->
+     <a href="https://www.google.com">google</a><a href="https://facebook.com">facebook</a><a href="https://www.qspider.com">qspider</a>
+     <br><br>
+     <!-- button -->
+      <button class="btn primary">First</button>
+      <button class="btn secondary">Second</button>
+    <!-- images -->
+     <img src="banner.jpg" alt="banner">
+     <img src="logo.png" alt="Logo">
+     <br><br>
+     <p class="first para">First para </p>
+     <p class="second para">Second para </p>
+     <br><br>
+     <p class="en-India">Namste India</p>
+     <p class="en">Hello</p>
+     <p class="en-Italian">Bonjour</p>
+     <p class="en-French">Ciao</p>
+     <p class="en-Japanese">こんいちわ</p>
+</body>
+</html>
