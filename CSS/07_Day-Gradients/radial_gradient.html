@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #box9 {
+            background: repeating-radial-gradient(circle, #ff6b6b 0px, #ff6b6b 10px, #4ecdc4 10px, #4ecdc4 20px);
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            min-height: 100vh;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        #box1 {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        }
+
+        #box2 {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+        #box3 {
+            background: radial-gradient(circle, #ffd93d 0%, #18cf40 40%, #442bcf 70%, #ff6b9d 100%);
+        }
+    
+        #box4 {
+            background: radial-gradient(circle at 30% 30%, #a8edea, #fed6e3);
+        }
+
+        #box5 {
+            background: conic-gradient(from 0deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff0000);
+        }
+
+        #box6 {
+            background: conic-gradient(from 45deg at 50% 50%, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        }
+
+        #box7 {
+            background: radial-gradient(circle, #667eea 0%, #764ba2 100%);
+        }
+
+        #box8 {
+            background: conic-gradient(from 0deg at 40% 60%, #ff6b9d, #ffd93d, #6bcf7f, #4d96ff, #ff6b9d);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+    <div id="box7"></div>
+    <div id="box8"></div>
+    <div class="box9"></div>
+</body>
+</html>
